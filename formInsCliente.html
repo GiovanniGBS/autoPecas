@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <meta charset = "UTF-8">
+    <title> Inserir cliente</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+</head>
+
+<body class = "animated bounceIn container col-md-6"  background="wpp2.png">
+    
+    <div class="row">
+        
+        <div class="col-md-12">
+        <h1 class="text-center alert alert-dark">Cadastrar produtos</h1>
+        
+            <form class="bg-white" style="padding:20px;" id="frmNovoProd" name="frmNovoProd" method="POST" action="insCliente.php">
+                <div class="form-group">
+                    <label for="lblNome"> <b>NOME</b> </label>
+                    <input type="text" class="form-control col-md-14" id="txtNome" name="txtNome" placeholder="Informe o nome do cliente... ">
+                        <br>
+                    <label for="lblEndereco"> <b>ENDEREÇO</b> </label>
+                    <input type="text" class="form-control col-md-12" id="txtEndereco" name="txtEndereco" placeholder="Informe o endereço do cliente... ">
+                        <br>
+                    <label for="lblValor"> <b>CIDADE</b> </label>
+                    <input type="text" class="form-control col-md-10" id="txtCidade" name="txtCidade" placeholder="Informe a cidade do cliente... "> 
+                        <br>
+                    <label for="lblEmail"> <b>EMAIL</b> </label>
+                    <input type="text" class="form-control col-md-10" id="txtEmail" name="txtEmail" placeholder="Informe o e-mail do cliente... ">
+                        <br>
+                    <label for="lblSaldo"> <b>SALDO</b> </label>
+                    <input type="text" class="form-control col-md-8" id="txtSaldo" name="txtSaldo" placeholder="Informe o saldo do cliente... ">
+                        <br>
+                </div>
+                <input type="submit" id="btnEnviar" name="btnEnviar" class="btn btn-success btn-lg" value="Gravar">
+                <input type="reset" id="btnLimpar" name="btnLimpar" class="btn btn-warning btn-sm" value="Limpar">
+                <input type="button" id="btnCancel" name="btnCancel" class="btn btn-danger btn-sm" value="Cancelar" 
+                onclick="javascript:location.href='listCliente.php'">
+    
+            </form>
+
+        </div>
+    </div>
+
+</html>
